@@ -66,7 +66,7 @@ docker run hello-world
 
 ## The easy but type heavy way
 
-### Now that Docker is setup we can  by running our first real Container. A lot of Containers can be found at [Docker Hub](https://hub.docker.com/). We can run Docker Containers with a very easy command from the command line
+### Now that Docker is setup we can start by running our first real Container. A lot of Containers can be found at [Docker Hub](https://hub.docker.com/). We can run Docker Containers with a very easy command from the command line
 
 ```bash
 docker run -itd <container name>
@@ -191,4 +191,4 @@ docker run -itd my_first_image
 67476b94c5b2   hello-world      "/hello"      8 hours ago         Exited (0) 33 minutes ago             angry_banach
 ```
 
-### We successfully build our own Docker Container with its ing features and installations as easy as pie :pie:
+### We successfully build our own Docker Container with its starting features and installations as easy as pie :pie:
