@@ -1,8 +1,8 @@
-# Docker Tutorial - the way to your own Docker Container :partying_face:
+# Docker Tutorial :whale: - the way to your own Docker Container :partying_face:
 
-## We install the docker engine
+## We install the Docker engine
 
-### 1. Set up docker `apt` repository.
+### 1. Set up Docker `apt` repository
 
 ```bash
 # Add Docker's official GPG key:
@@ -20,7 +20,7 @@ echo \
 sudo apt-get update
 ```
 
-**NOTE** If you use an Ubuntu derivative distro, such as Linux Mint, you may need to use ==UBUNTU_CODENAME== instead of ==VERSION_CODENAME==
+#### **NOTE** If you use an Ubuntu derivative distro, such as Linux Mint, you may need to use **UBUNTU_CODENAME** instead of **VERSION_CODENAME**
 
 ### 2. Install the Docker packages
 
@@ -28,7 +28,7 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
-### 3. Verify your Success :heart_eyes:
+### 3. Verify your Success :100:
 
 ```bash
 sudo docker run hello-world
@@ -36,9 +36,9 @@ sudo docker run hello-world
 
 ### Post installation cheese :cheese:
 
-After installing you may notice that you need to write `sudo` everytime you want to do something :weary:. That gets very tedious very fast. So I recommend to give docker root priviliges. This could potentially be a ==**security risk**==, so ask your admin for the okay :ok_hand:
+#### After installing you may notice that you need to write `sudo` everytime you want to do something. That gets very tedious very fast. So I recommend to give docker root privileges. This could potentially be a **security risk**, so ask your **ADMIN** for the okay :ok_hand: if you are unsure
 
-If you want to get rid of the `sudo` use
+#### If you want to get rid of the `sudo` grind 
 
 #### 1. Create the `docker` group
 
@@ -66,13 +66,13 @@ docker run hello-world
 
 ## The easy but type heavy way
 
-### Now that Docker is setup we can start by running our first real container. A lot of containers can be found at [Docker Hub](https://hub.docker.com/). We can run Docker Containers with a very easy command from the command line
+### Now that Docker is setup we can start by running our first real Container. A lot of Containers can be found at [Docker Hub](https://hub.docker.com/). We can run Docker Containers with a very easy command from the command line
 
 ```bash
 docker run -itd <container name>
 ```
 
-### Hereby the options `-itd` stand for **interactive, allocate a pseudo-TTY** and **detach**. We can also run specific versions of a container using
+### Hereby the options `-itd` stand for **interactive, allocate a pseudo-TTY** and **detach**. We can also run specific versions of a Container using
 
 ```bash
 docker run -itd <container name>:<version number>
@@ -84,7 +84,7 @@ docker run -itd <container name>:<version number>
 docker run -itd ubuntu:20.04
 ```
 
-### **NOTE** we have now launched a Docker Container, but maybe you are wondering why we are not inside the container yet? Check if the container is running by using
+### **NOTE** we have now launched a Docker Container, but maybe you are wondering why we are not inside the Container yet? Check if the Container is running by using
 
 ```bash
 docker ps -a
@@ -98,7 +98,7 @@ CONTAINER ID   IMAGE          COMMAND       CREATED          STATUS             
 67476b94c5b2   hello-world    "/hello"      7 hours ago      Exited (0) 7 hours ago             angry_banach
 ```
 
-### If you container is running - nice good job! If not we need to start it by
+### If you Container is running - nice good job! If not we need to start it by
 
 ```bash
 docker start -id <container name>
@@ -112,9 +112,9 @@ docker start -id <container name>
 docker attach <container name>
 ```
 
-### If you successfully attached you can just start your coding shenanigans as usual on this fresh container :peach:
+### If you successfully attached you can just start your coding shenanigans as usual on this fresh Container :peach:
 
-### If your container is not running and not really responding you may check the **COMMAND** section in the `docker ps -a` output. If the container is first started by the `run` action and its **COMMAND** is for example "/hello", then the Container will start and run this Command and afterwards close, because it has finished its function
+### If your Container is not running and not really responding you may check the **COMMAND** section in the `docker ps -a` output. If the Container is first started by the `run` action and its **COMMAND** is for example "/hello", then the Container will start and run this Command and afterwards close, because it has finished its function
 
 ## Your own Docker Image
 
@@ -191,4 +191,4 @@ docker run -itd my_first_image
 67476b94c5b2   hello-world      "/hello"      8 hours ago         Exited (0) 33 minutes ago             angry_banach
 ```
 
-### We successfully build our own Docker container with its starting features and installations as easy as pie :pie:
+### We successfully build our own Docker Container with its starting features and installations as easy as pie :pie:
