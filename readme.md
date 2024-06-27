@@ -192,3 +192,14 @@ docker run -itd my_first_image
 ```
 
 ### We successfully build our own Docker Container with its starting features and installations as easy as pie :pie:
+
+## Some fancy quick things as a dessert
+
+### If you are inside a container bash you can safely detach with the container still running by pressing `ctrl` + `p`  and then `ctrl` + `q` 
+
+### On the other hand if you want to access a running container with second bash instance use 
+
+```bash
+docker exec -it <container name> bash
+```
+
