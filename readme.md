@@ -104,7 +104,7 @@ CONTAINER ID   IMAGE          COMMAND       CREATED          STATUS             
 docker start -ia <container name>
 ```
 
-### check again wirh the `docker ps -a` command. If you Container is up - great if not we have trouble :angry:
+### check again with the `docker ps -a` command. If your Container is up - great, if not we have a hickup :raised_eyebrow: and need to investigate
 
 ### If you Container is up attach to it using
 
