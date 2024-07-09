@@ -1,4 +1,4 @@
-# Docker Tutorial :whale: - the way to your own Docker Container :partying_face:
+# Docker Tutorial :whale: - the way to your own Docker Container 
 
 ## We install the Docker engine
 
@@ -46,19 +46,19 @@ sudo docker run hello-world
 sudo groupadd docker
 ```
 
-#### 2. Add tou user to the `docker` group :pinched_fingers:
+#### 2. Add your user to the `docker` group 
 
 ```bash
 sudo usermod -aG docker $USER
 ```
 
-#### 3. Log out and back in for the changes to take effect or simply write :wink:
+#### 3. Log out and back in for the changes to take effect or simply write 
 
 ```bash
 newgrp docker
 ```
 
-#### 4. Verify your Success :heart_eyes:
+#### 4. Verify your Success 
 
 ```bash
 docker run hello-world
@@ -112,7 +112,7 @@ docker start -ia <container name>
 docker attach <container name>
 ```
 
-### If you successfully attached you can just start your coding shenanigans as usual on this fresh Container :peach:
+### If you successfully attached you can just start your coding shenanigans as usual on this fresh Container 
 
 ### If your Container is not running and not really responding you may check the **COMMAND** section in the `docker ps -a` output. If the Container is first started by the `run` action and its **COMMAND** is for example "/hello", then the Container will start and run this Command and afterwards close, because it has finished its function
 
@@ -145,7 +145,7 @@ RUN apt update && \
     apt install -y neofetch 
 ```
 
-### Inside we have multiple options to setup our owm image. In our example we take the `ubuntu:22.04` image as a base and use `/home/` as our working directory. In the next step docker will copy everything it finds under the `/home/ace/Documents` directory and copies it into the home folder. Note that the `.` here denotes the `/home/` directory inside the container since we set the working directory with `WORKDIR /home/`. And finally it runs `update` and installs `vim`, `python3.10`, and of course `neofetch`. :hot_face:
+### Inside we have multiple options to setup our owm image. In our example we take the `ubuntu:22.04` image as a base and use `/home/` as our working directory. In the next step docker will copy everything it finds under the `/home/ace/Documents` directory and copies it into the home folder. Note that the `.` here denotes the `/home/` directory inside the container since we set the working directory with `WORKDIR /home/`. And finally it runs `update` and installs `vim`, `python3.10`, and of course `neofetch`. 
 
 ### That was a **LOT** of stuff but if you are interested in the possibilities of the `DOCKERFILE` is highly recommend the [DOCKER DOCS](https://docs.docker.com/reference/dockerfile/). :nerd_face:
 
